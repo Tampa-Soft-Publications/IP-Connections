@@ -8,7 +8,7 @@ import (
 )
 
 func ip_trace(ip string) (latitude, longitude float64, city, country string, err error) {
-	resp, err := http.Get("https://api.apibundle.io/ip-lookup?apikey=7cf5190171984a06aa074cb287d9d6c4&ip=" + string(ip))
+	resp, err := http.Get("https://api.apibundle.io/ip-lookup?apikey=[API_KEY]&ip=" + string(ip))
 	if err != nil {
 		log.Fatalln(err)
 	}
